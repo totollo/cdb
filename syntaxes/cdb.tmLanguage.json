@@ -1,0 +1,40 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "cdb",
+	"patterns": [
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"strings": {
+			"patterns": [
+				{
+					"name": "support.type.property-name.cdb",
+					"match": "(?<=[L|S|F|M]:[G|X|S|C|]\\$)([^\\$]+)(?=\\$)"
+				},
+				{
+					"name": "support.type.property-name.cdb",
+					"match": "(?<=[L|S|F|M]:XG\\$)(\\S+)(?=\\$)"
+				},
+				{
+					"name": "keyword.control.cdb",
+					"match": "\\b(\\$)\\b"
+				},
+				{
+					"name": "storage.type.cdb",
+					"match": "^[L|S|F|M]:"
+				},
+				{
+					"name": "comment.cdb",
+					"match": ":[0-9|A-Z]+$"
+				},
+				{
+					"name": "entity.name.function.cdb",
+					"match": "(?<=\\$)\\d+(?=\\$)"
+				}
+			]
+		}
+	},
+	"scopeName": "source.cdb"
+}

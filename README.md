@@ -1,2 +1,3 @@
-# cdb
-cdb syntax
+# cdb README
+
+color cdb file
